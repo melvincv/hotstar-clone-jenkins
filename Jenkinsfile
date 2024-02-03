@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/Aj7Ay/Hotstar-Clone.git'
+                git branch: 'main', url: 'https://github.com/melvincv/hotstar-clone-jenkins.git'
             }
         }
         stage('Terraform init'){
