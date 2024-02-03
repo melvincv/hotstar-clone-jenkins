@@ -1,11 +1,6 @@
 pipeline{
     agent any
     stages {
-        stage('Checkout from Git'){
-            steps{
-                git branch: 'main', url: 'https://github.com/melvincv/hotstar-clone-jenkins.git'
-            }
-        }
         stage('Terraform init'){
              steps{
                  dir('EKS_TERRAFORM') {
